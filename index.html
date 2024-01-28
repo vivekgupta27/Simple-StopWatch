@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            background-color:rgb(30,30,30);
+        }
+        .clock{
+            font-size: 4rem;
+            color: #fff;
+            padding: 3rem;
+
+        }
+        button{
+            padding: 1.25rem;
+            width: 200px;
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0,0, 0.3);
+            background-color: white;
+            margin: 30px;
+            cursor: pointer;
+            font: 100 1.5rem sans-serif;
+            border-radius: 50px;
+        }
+        button:hover{
+
+            background-color: rgb(50,50,50);
+            color: #fff;
+        }
+    </style>
+    
+</head>
+<body>
+   <div class="container">
+    <div class="clock">00:00:00</div>
+    <div class="btn">
+        <button onclick="startStopwatch()">Start</button>
+        <button onclick="stopStopwatch()">Stop</button>
+    </div>
+
+   </div>
+</body>
+<script src="./script.js"></script>
+</html>
